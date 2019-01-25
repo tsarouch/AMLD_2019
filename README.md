@@ -5,7 +5,7 @@ Repo for content of the AMLD 2019 conference
 The workshop will demonstrate the basic principles of Remote Sensing and how it can be used in real life applications. It is split in two streams:
 </br>
 
-**Main stream**
+**Main stream**</br>
 We  share basic concepts and typical Remote Sensing hands-on (Jupyter Notebook) examples.
 - Intro in remote sensing & applications in insurance
 - Hands on basic concepts and data types
@@ -14,16 +14,16 @@ We  share basic concepts and typical Remote Sensing hands-on (Jupyter Notebook) 
 - Dive deeper in Remote Sensing with snow-cloud discrimination example
  </br>
 
-**Hack Stream**
+**Hack Stream**</br>
 We would not like to keep experts in the room bored. 
 Let's hack together solutions on object detections and farm boundaries.
 Teams with best solutions might be considered for further collaboration.
  </br>
 
-**Important Links**
-Workshop GitHub repo: This repo
-Workshop Google Earth Engine repo: https://code.earthengine.google.com/?accept_repo=users/bernhard/AMLD 
-Workshop challenge:  https://github.com/tsarouch/AMLD_2019/tree/master/Challenge
+**Important Links**</br>
+- Workshop GitHub repo: This repo
+- Workshop Google Earth Engine repo: https://code.earthengine.google.com/?accept_repo=users/bernhard/AMLD 
+- Workshop challenge:  https://github.com/tsarouch/AMLD_2019/tree/master/Challenge
 </br>
 
 **Prerequisites**
