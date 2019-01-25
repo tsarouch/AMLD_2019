@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>farm_exmple_4</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <Polygon><altitudeMode>clampToGround</altitudeMode><outerBoundaryIs><LinearRing><altitudeMode>clampToGround</altitudeMode><coordinates>-53.8162279129028,-24.5876757009143 -53.8159704208374,-24.5878708208744 -53.8156700134277,-24.5882220360364 -53.8153696060181,-24.5885732502133 -53.8150691986084,-24.5888073924506 -53.8144683837891,-24.5892366520817 -53.8186740875244,-24.5939584108901 -53.8205623626709,-24.5924755636694 -53.8162279129028,-24.5876757009143</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>
