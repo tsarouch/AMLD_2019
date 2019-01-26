@@ -22,6 +22,8 @@ Teams with best solutions might be considered for further collaboration.
 
 **Important Links**</br>
 - Workshop GitHub repo: This repo
+- Workshop material: https://drive.google.com/drive/folders/15vQL_Wi_qHyDSocL9GVQKVA1x7t7zha0?usp=sharing
+- Colaboratory link: https://colab.research.google.com/notebooks/welcome.ipynb
 - Workshop Google Earth Engine repo: https://code.earthengine.google.com/?accept_repo=users/bernhard/AMLD 
 - Workshop challenge:  https://github.com/tsarouch/AMLD_2019/tree/master/Challenge
 </br>
