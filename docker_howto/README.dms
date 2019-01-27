@@ -1,0 +1,94 @@
+Pre-Requisites
+==============
+
+1) Install Docker Community Edition in your host machine
+
+2) Copy the "GDAL" directory in your host machine
+
+3) Provide execute persmissions to the .sh files in this directory
+
+
+How tos?
+=======
+
+1) Build
+   
+   - Before building, add required python dependencies (pypi modules) in "gdal/requirements.txt". These dependencies will be installed in the Docker container using "pip"
+   - To build a new Docker image, execute "1.build.sh". It takes atleast an hour for the first time build, as the GDAL is compiled from source('C' and 'C++'). 
+   - If you want to skip build and import the provided image, read "6) Import image from tar"
+   - Once build is complete, you would see "gdal4" image in local Docker repository. 
+     
+2) Create and Start Container
+   
+   - To create and start a new Docker container for 'gdal4', execute "2.start.sh". Docker container id will be displayed to acknowledge successful start.
+
+3) Start interactive shell session with Docker Container
+
+   - To start interactive session in Docker container, execute "3.bash.sh". Container's bash shell is displayed for further commands
+   - To test GDAL; execute "python3 test.py" and you would see the image band array in the console and a message saying GDAL works fine
+   - Use this shell to write and execute further python code with GDAL
+
+4) Stop Container (caution!!)
+  
+   - To stop and remove Docker container, execute "4.stop.sh"
+   - If you do not want to remove Docker container, then execute just "docker stop gdal4"
+
+
+5) Export image to tar
+
+   - To export Docker image as tar, execute "5.export-image.sh"
+   - Use this to share your built Docker images to other hosts
+
+6) Import image from tar
+
+   - To import Docker image into your local repository, execute "6.import-image.sh". It takes considerable time to import
+   - Once imported, you may start and play with the container
+
+
+
+Useful Docker commands
+======================
+
+1) List Docker images - docker images
+
+2) List Docker containers - docker ps -a
+
+3) Stop Docker container - docker stop <container name or id>
+
+4) Start Docker container - docker run -dt --name <container name> <image name>
+
+5) Resume stopped Docker container(this is useful if you made any changes to the container and wish to reuse the same)
+   docker start <container name or id>
+
+6) Remove stopped Docker container - docker rm <container name or id>
+
+7) Remove Docker image - docker rmi <image name>
+
+8) Copy a file from host machine to Docker container
+
+   docker cp <host file path> <container name or id>:[path]/<file name>
+
+   eg: docker cp /home/mydir/myfile.txt gdal4:/usr/local/myfile.txt
+
+9) Copy a file from Docker container to host machine
+
+   docker cp <container name or id>:[path]/<file name> <host file path>
+
+   eg: docker cp gdal4:/usr/local/myfile.txt /home/mydir/myfile.txt
+
+10) Copy multiple files in dir from host machine to Docker container
+    
+    docker cp <host src dir path>/. <container name or id>:<target path>
+
+11) Copy multiple files from Docker container to host machine
+
+    docker cp <container name or id>:<src path>/. <host target dir path> 
+
+
+
+
+
+
+
+
+

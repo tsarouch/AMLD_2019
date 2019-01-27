@@ -1,0 +1,1 @@
+docker load -i ./gdal4.tar
